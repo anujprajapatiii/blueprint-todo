@@ -7,13 +7,16 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --experimental-strip-types --test tests/storage.test.ts"
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
     "@blueprintjs/core": "6.21.0",
     "normalize.css": "8.0.1",
     "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "react-dom": "19.2.6",
+    "@blueprintjs/table": "6.3.0",
+    "@blueprintjs/select": "6.4.0",
+    "@blueprintjs/datetime": "6.3.0"
   },
   "devDependencies": {
     "@types/node": "22.19.19",
@@ -23,5 +26,7 @@
     "typescript": "5.9.3",
     "vite": "8.0.13"
   },
-  "engines": { "node": ">=22.13.0" }
+  "engines": {
+    "node": ">=22.13.0"
+  }
 }
